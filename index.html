@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download stunning high-resolution nature photographs — mountains, oceans, forests, and aurora borealis. Free HD wallpapers.">
+  <title>PixelVault — Premium Photo Downloads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb--purple"></div>
+    <div class="bg-orb bg-orb--blue"></div>
+    <div class="bg-orb bg-orb--pink"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">PixelVault</a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#download-all">Downloads</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        4 Premium Photos Available
+      </div>
+      <h1>
+        Capture the<br>
+        <span class="gradient-text">Beauty of Nature</span>
+      </h1>
+      <p>Download breathtaking high-resolution photographs of the world's most stunning landscapes. Free to use, ready to inspire.</p>
+      <a href="#gallery" class="hero-cta">
+        Explore Gallery
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Photo Collection</span>
+        <h2 class="section-title">Stunning Landscapes</h2>
+        <p class="section-desc">Each photo is available in high resolution. Hover over any image and click to download.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Card 1 — Mountain -->
+        <div class="gallery-card animate-on-scroll" id="card-mountain">
+          <div class="card-image-wrapper">
+            <img src="images/mountain-landscape.jpg" alt="Mountain landscape at golden hour with snow-capped peaks" loading="lazy">
+            <div class="card-overlay">
+              <a href="images/mountain-landscape.jpg" download="mountain-landscape.jpg" class="download-btn" id="download-mountain">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download HD
+              </a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div>
+              <span class="card-title">Mountain Majesty</span>
+              <div class="card-meta">
+                <span class="card-tag">Landscape</span>
+                <span class="card-size">525 KB</span>
+              </div>
+            </div>
+            <button class="info-toggle-btn" aria-label="Show photo details" onclick="toggleDetails('details-mountain', this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="card-details" id="details-mountain">
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Swiss Alps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Camera</span>
+                <span class="detail-val">Sony α7R IV</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Exposure</span>
+                <span class="detail-val">f/8.0 · 1/250s · ISO 100</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Resolution</span>
+                <span class="detail-val">6000 x 4000 (4K UHD)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 — Ocean -->
+        <div class="gallery-card animate-on-scroll" id="card-ocean">
+          <div class="card-image-wrapper">
+            <img src="images/ocean-coastline.jpg" alt="Tropical ocean coastline with turquoise water and sandy beach" loading="lazy">
+            <div class="card-overlay">
+              <a href="images/ocean-coastline.jpg" download="ocean-coastline.jpg" class="download-btn" id="download-ocean">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download HD
+              </a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div>
+              <span class="card-title">Ocean Paradise</span>
+              <div class="card-meta">
+                <span class="card-tag">Seascape</span>
+                <span class="card-size">464 KB</span>
+              </div>
+            </div>
+            <button class="info-toggle-btn" aria-label="Show photo details" onclick="toggleDetails('details-ocean', this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="card-details" id="details-ocean">
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Amalfi Coast, Italy</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Camera</span>
+                <span class="detail-val">Canon EOS R5</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Exposure</span>
+                <span class="detail-val">f/4.0 · 1/800s · ISO 200</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Resolution</span>
+                <span class="detail-val">8192 x 5464 (8K UHD)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 — Forest -->
+        <div class="gallery-card animate-on-scroll" id="card-forest">
+          <div class="card-image-wrapper">
+            <img src="images/enchanted-forest.jpg" alt="Dense enchanted forest with sunbeams through the canopy" loading="lazy">
+            <div class="card-overlay">
+              <a href="images/enchanted-forest.jpg" download="enchanted-forest.jpg" class="download-btn" id="download-forest">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download HD
+              </a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div>
+              <span class="card-title">Enchanted Forest</span>
+              <div class="card-meta">
+                <span class="card-tag">Forest</span>
+                <span class="card-size">768 KB</span>
+              </div>
+            </div>
+            <button class="info-toggle-btn" aria-label="Show photo details" onclick="toggleDetails('details-forest', this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="card-details" id="details-forest">
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Redwood National Park, USA</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Camera</span>
+                <span class="detail-val">Nikon Z7 II</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Exposure</span>
+                <span class="detail-val">f/11 · 0.5s · ISO 64</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Resolution</span>
+                <span class="detail-val">8256 x 5504 (8K UHD)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 — Aurora -->
+        <div class="gallery-card animate-on-scroll" id="card-aurora">
+          <div class="card-image-wrapper">
+            <img src="images/aurora-borealis.jpg" alt="Northern lights aurora borealis over frozen arctic landscape" loading="lazy">
+            <div class="card-overlay">
+              <a href="images/aurora-borealis.jpg" download="aurora-borealis.jpg" class="download-btn" id="download-aurora">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download HD
+              </a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div>
+              <span class="card-title">Aurora Borealis</span>
+              <div class="card-meta">
+                <span class="card-tag">Night Sky</span>
+                <span class="card-size">805 KB</span>
+              </div>
+            </div>
+            <button class="info-toggle-btn" aria-label="Show photo details" onclick="toggleDetails('details-aurora', this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="card-details" id="details-aurora">
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Tromsø, Norway</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Camera</span>
+                <span class="detail-val">Fujifilm GFX 100S</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Exposure</span>
+                <span class="detail-val">f/2.8 · 8.0s · ISO 1600</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Resolution</span>
+                <span class="detail-val">11648 x 8736 (100MP UHD)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">About PixelVault</span>
+        <h2 class="section-title">The Vault Experience</h2>
+        <p class="section-desc">A carefully curated catalog of stunning, high-resolution photographs optimized for wallpapers, design assets, and inspiration.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Creative Commons CC0</h3>
+          <p>All assets in PixelVault are released under the Creative Commons CC0 license. You are free to copy, modify, distribute, and use the images, even for commercial purposes, without asking permission.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3>Ultra High Resolution</h3>
+          <p>Every photo is captured on high-end professional equipment and exported in full high-resolution (up to 100 megapixels) ensuring maximum clarity for large-screen monitors and high-DPI prints.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3>Zero Friction Setup</h3>
+          <p>No account creation, no subscriptions, and no hidden popups. PixelVault is built to respect your time and attention—simply browse, find your favorite, and download in a single tap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Got questions about licensing, resolution, or usage? We've got you covered.</p>
+      </div>
+
+      <div class="faq-accordion animate-on-scroll">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are these images really free to use?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes! All photographs available on PixelVault are completely free for personal and commercial use. You don't need to ask permission or provide attribution, although a link back to our project is always appreciated.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What resolution are the downloaded images?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>The downloaded images are provided in their maximum resolution, ranging from 4K UHD (6000 x 4000) up to 100 megapixels (11648 x 8736). They are perfect for high-density monitors, desktop backgrounds, and design projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I modify the images before using them?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Absolutely. You can crop, color-grade, apply filters, overlay text, or combine them with other elements as needed. There are no restrictions on modification.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is there a way to download all photographs at once?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes, we have a "Download All Photos" section at the bottom of the page. Clicking that button will trigger sequential downloads for all four high-resolution wallpapers directly to your machine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download All Section -->
+  <section class="download-all-section" id="download-all">
+    <div class="container">
+      <div class="download-all-card animate-on-scroll">
+        <h3>Download All Photos</h3>
+        <p>Get all 4 premium high-resolution photographs in one click.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Photos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2.6 MB</div>
+            <div class="stat-label">Total Size</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">HD</div>
+            <div class="stat-label">Quality</div>
+          </div>
+        </div>
+        <button class="download-all-btn" id="download-all-btn" onclick="downloadAll()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download All Photos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with ❤ by <span class="gradient-text">PixelVault</span> · Photos from Unsplash</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Download all photos one by one
+    function downloadAll() {
+      const photos = [
+        { url: 'images/mountain-landscape.jpg', name: 'mountain-landscape.jpg' },
+        { url: 'images/ocean-coastline.jpg', name: 'ocean-coastline.jpg' },
+        { url: 'images/enchanted-forest.jpg', name: 'enchanted-forest.jpg' },
+        { url: 'images/aurora-borealis.jpg', name: 'aurora-borealis.jpg' }
+      ];
+
+      photos.forEach((photo, i) => {
+        setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = photo.url;
+          a.download = photo.name;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }, i * 500);
+      });
+    }
+
+    // Toggle EXIF Details
+    function toggleDetails(detailsId, btn) {
+      const details = document.getElementById(detailsId);
+      if (details.classList.contains('active')) {
+        details.classList.remove('active');
+        btn.classList.remove('active');
+      } else {
+        // Close other open details first for cleaner UX
+        document.querySelectorAll('.card-details.active').forEach(d => {
+          d.classList.remove('active');
+        });
+        document.querySelectorAll('.info-toggle-btn.active').forEach(b => {
+          b.classList.remove('active');
+        });
+        details.classList.add('active');
+        btn.classList.add('active');
+      }
+    }
+
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const answer = button.nextElementSibling;
+        const isOpen = item.classList.contains('active');
+
+        // Close other items
+        document.querySelectorAll('.faq-item.active').forEach(openItem => {
+          openItem.classList.remove('active');
+          openItem.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          item.classList.remove('active');
+          answer.style.maxHeight = null;
+        }
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (link) {
+          if (scrollY >= top && scrollY < top + height) {
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
